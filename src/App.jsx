@@ -16,6 +16,10 @@ function App() {
       <div>
         <Navbar />
       </div>
+      <div className="home">
+        <h1>Welcome Puppy Bowl LVII</h1>
+        <p>Here is a list of all All-Star Players playing in this special event!</p>
+      </div>
       <div className="main-section">
         <Routes>
           <Route path="/" element={<Allplayers />} />

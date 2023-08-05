@@ -26,11 +26,11 @@ export const Allplayers = () => {
 
   return (
     <>
-      <div>
+      <div className="all-players">
         {displayPlayers.map((player) => (
-          <div key={player.id}>
+          <div key={player.id} className="player-card">
             <p>Name: {player.name}</p>
-            <img src={player.imageUrl} />
+            <img src={player.imageUrl} alt={player.name} />
             <p>Breed: {player.breed}</p>
             <p>Number: {player.id}</p>
             <p>Position: {player.status}</p>
