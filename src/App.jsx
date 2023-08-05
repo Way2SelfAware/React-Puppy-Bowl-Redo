@@ -1,8 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
 import { Addplayerform } from "./components/addplayerform";
 import { Allplayers } from "./components/allplayers";
+import { Searchbar } from "./components/searchbar";
+import { PlayerDetails } from "./components/playerdetails"; // Correct import name
+
 import "./App.css";
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Allplayers />} />
           <Route path="/newplayerform" element={<Addplayerform />} />
+          <Route path="/searchbar" element={<Searchbar />} />
+          <Route path="/playerdetails/:id" element={<PlayerDetails />} />
         </Routes>
       </div>
     </>

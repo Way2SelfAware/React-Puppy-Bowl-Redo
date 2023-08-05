@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const Allplayers = () => {
   //State Management
@@ -24,16 +25,21 @@ export const Allplayers = () => {
   }, []);
 
   return (
-    <div>
-      {displayPlayers.map((player) => (
-        <div key={player.id}>
-          <p>Name: {player.name}</p>
-          <img src={player.imageUrl} />
-          <p>Breed: {player.breed}</p>
-          <p>Number: {player.id}</p>
-          <p>Position: {player.status}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <div>
+        {displayPlayers.map((player) => (
+          <div key={player.id}>
+            <p>Name: {player.name}</p>
+            <img src={player.imageUrl} />
+            <p>Breed: {player.breed}</p>
+            <p>Number: {player.id}</p>
+            <p>Position: {player.status}</p>
+            <Link to={`/playerdetails/${player.id}`}>
+              <button>More Stats</button>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
