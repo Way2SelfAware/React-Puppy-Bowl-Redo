@@ -111,3 +111,18 @@ body {
     border: none;
     cursor: pointer;
 }
+
+/* Search Bar */
+.search-bar {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}

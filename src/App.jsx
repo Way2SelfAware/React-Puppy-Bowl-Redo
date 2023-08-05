@@ -24,7 +24,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Allplayers />} />
           <Route path="/newplayerform" element={<Addplayerform />} />
-          <Route path="/searchbar" element={<Searchbar />} />
           <Route path="/playerdetails/:id" element={<PlayerDetails />} />
         </Routes>
       </div>

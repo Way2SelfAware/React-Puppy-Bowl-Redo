@@ -6,7 +6,6 @@ export const Navbar = () => {
     <div className="navbar">
       <Link to={"/"}>Home</Link>
       <Link to={"/newplayerform"}>Add New Player</Link>
-      <Link to={"/searchbar"}>Search Players</Link>
     </div>
   );
 };
